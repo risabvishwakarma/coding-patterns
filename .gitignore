@@ -1,0 +1,31 @@
+# Compiled class file
+*.class
+
+# Log files
+*.log
+
+# IntelliJ project files
+.idea/
+
+# Compiled bytecode
+target/
+
+# Dependencies
+lib/
+
+# Package files
+*.jar
+*.war
+*.ear
+*.zip
+
+# Eclipse specific files
+.classpath
+.project
+.settings/
+
+# Mac OS specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
