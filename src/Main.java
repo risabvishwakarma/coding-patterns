@@ -4,7 +4,16 @@ import adepter.charger.AndroidCharger;
 import adepter.charger.IphoneCharger;
 import adepter.charger.impl.Apple;
 import adepter.charger.impl.Mi;
+import bridge.Video;
+import bridge.processorImpl.HDProcessor;
+import bridge.processorImpl.UHDProcessor;
+import bridge.videoImpl.NetflixVideo;
+import bridge.videoImpl.YoutubeVideo;
 import builder.User;
+import chain.PaymentHandler;
+import chain.impl.BankPayment;
+import chain.impl.CreditPayment;
+import chain.impl.PayPalPayment;
 import factory.ComputerFactory;
 import factory.Computer;
 import factory.abs.impl.LaptopAbsFactory;
@@ -77,13 +86,23 @@ public class Main {
                 .build();
         System.out.println(user.toString());*/
 
-        ATM atm=new ATM();
+      /*  ATM atm=new ATM();
         atm.accessAccount();
-        atm.deposit();
+        atm.deposit();*/
 
+    /*    Video video=new YoutubeVideo(new HDProcessor());
+        video.play();
+        video=new NetflixVideo(new UHDProcessor());
+        video.play();*/
 
+/*        PaymentHandler bank=new BankPayment();
+        PaymentHandler creditPayment=new CreditPayment();
+        PaymentHandler paymentHandler=new PayPalPayment();
 
+        bank.setNext(creditPayment)
+                .setNext(paymentHandler);
 
+        bank.doPayment(100);*/
 
     }
 }
